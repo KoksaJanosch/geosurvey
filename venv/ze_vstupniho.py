@@ -1,8 +1,3 @@
-
-# načti vstupní soubor
-# rozparceluj ho na slovník
-# najdi ze vstupu "slovo", nahraď slovem ze vstupu
-
 import csv
 import os
 from pathlib import Path
