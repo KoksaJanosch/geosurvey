@@ -1,2 +1,2 @@
-Jméno;Věk;3;4;5
-a;b;c;d;e
+Jméno;Věk;Adresa;Město;Pes
+jmeno_osoba;vek_osoba;adresa;mesto;pes_majitel

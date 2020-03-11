@@ -25,3 +25,4 @@ with open(inputFileName, newline='', encoding='utf-8-sig') as inFile, open(outpu
     for row in r:
         print("data:", row)
         w.writerow(row)
+
