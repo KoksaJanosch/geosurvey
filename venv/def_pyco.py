@@ -4,9 +4,8 @@ from pathlib import Path
 # cesta k souborům
 cesta_data = Path("data/")
 
-
 in_vzor = cesta_data / "vzor.csv"
-in_file = cesta_data / "v_CSV_.csv"    #####
+in_file = cesta_data / "test_data.csv"
 out_file = os.path.splitext(in_file)[0] + "_completed.csv"
 
 # Funkce: hlavičky z inputů
@@ -26,9 +25,8 @@ with open(in_vzor, newline='', encoding='utf-8-sig') as in_slovnik, \
     header_data = next(r_data)  # získá hlavičku
     print("data:", header_data)
     for data_r in r_data:
-        dataA = (data_r)
+        data = (data_r)
     header_dataOut = header_data
-
 print("\n")
 
 for klic_slovnik in header_slovnik:
@@ -48,7 +46,7 @@ with open(out_file, 'w', newline='', encoding='utf-8-sig') as out_data:
 
     # zapíše
     w_data.writerow(header_dataOut)
-    w_data.writerow(dataA)
+    w_data.writerow(data)
 
 def Diff(li1, li2):
     return (list(set(li1) & set(li2)))

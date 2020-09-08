@@ -1,18 +1,13 @@
-list = ["Jméno", "Věk", "Chyna", "Pes"]
-slovnik_header = ["Jméno", "Věk", "Pes"]
-slovnik = {'Jméno': 'jmeno_osoba', 'Věk': 'vek_osoba', "Pes": "pes_majitel"}
-list2 = []
+import os, sys, csv
+from pathlib import Path
 
-for klic_slovnik in slovnik_header:
-    # print("hledám pro:", klic_slovnik)
-    for klic_data in list:
-        if klic_slovnik == klic_data:
-            # print("ANO", klic_data)
-            value_slovnik = slovnik.get(klic_slovnik)
-            list = [value_data.replace(klic_data, value_slovnik) for value_data in list]
-            print(list)
-        else:
-            # print("nenalezena shoda:", klic_data)
-            pass
+# cesta k souborům
+cesta_data = Path("data/")
 
-# print(header_output)
+in_uziv = cesta_data / [input("název souboru: ") + ".csv"]
+print(in_uziv)
+
+
+
+
+print(in_vzor)
